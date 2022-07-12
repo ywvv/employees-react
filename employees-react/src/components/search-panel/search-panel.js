@@ -2,11 +2,8 @@ import './search-panel.css'
 import {Component} from 'react'
 
 class SearchPanel extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      term: ''
-    }
+  state = {
+    term: ''
   }
 
   onUpdateSearch = (e) => {

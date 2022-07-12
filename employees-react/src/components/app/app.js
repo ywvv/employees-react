@@ -8,17 +8,14 @@ import nextId from 'react-id-generator'
 import './app.css'
 
 class App extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      data: [
-        {name: 'John C.', salary: 800, increase: false, rise: true, id: nextId()},
-        {name: 'Alex M.', salary: 3000, increase: true, rise: false, id: nextId()},
-        {name: 'Carl W.', salary: 5000, increase: false, rise: false, id: nextId()}
-      ],
-      term: '',
-      filter: 'all'
-    }
+  state = {
+    data: [
+      {name: 'John C.', salary: 800, increase: false, rise: true, id: nextId()},
+      {name: 'Alex M.', salary: 3000, increase: true, rise: false, id: nextId()},
+      {name: 'Carl W.', salary: 5000, increase: false, rise: false, id: nextId()}
+    ],
+    term: '',
+    filter: 'all'
   }
 
   deleteItem = (id) => {

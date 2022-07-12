@@ -15,6 +15,7 @@ const EmployeesListItem = (props) => {
       <span
         className="list-group-item-label"
         data-toggle="rise"
+        tabIndex="1"
         onClick={onToggleProp}>{name}</span>
       <input
         type="text"
